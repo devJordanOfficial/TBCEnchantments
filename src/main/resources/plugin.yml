@@ -1,0 +1,10 @@
+name: TBCEnchantments
+version: '${project.version}'
+main: fun.tbcraft.tbcenchantments.Main
+api-version: 1.18
+authors: [ devJordan ]
+description: Private plugin for TBC
+
+commands:
+  Test:
+  Anvil:
