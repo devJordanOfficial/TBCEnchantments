@@ -1,6 +1,9 @@
 package fun.tbcraft.tbcenchantments;
 
+import fun.tbcraft.tbcenchantments.Data.ItemDataType;
+import fun.tbcraft.tbcenchantments.Data.ItemType;
 import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
@@ -15,6 +18,9 @@ public class Scrolls {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
 
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
+
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1000000);
         item.setItemMeta(meta);
@@ -25,6 +31,9 @@ public class Scrolls {
     public ItemStack getUncommonScroll() {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
+
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
 
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1100000);
@@ -37,6 +46,9 @@ public class Scrolls {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
 
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
+
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1200000);
         item.setItemMeta(meta);
@@ -47,6 +59,9 @@ public class Scrolls {
     public ItemStack getEpicScroll() {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
+
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
 
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1300000);
@@ -59,6 +74,9 @@ public class Scrolls {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
 
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
+
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1400000);
         item.setItemMeta(meta);
@@ -69,6 +87,9 @@ public class Scrolls {
     public ItemStack getLegendaryScroll() {
         ItemStack item = new ItemStack(Material.PAPER);
         ItemMeta meta = item.getItemMeta();
+
+        NamespacedKey itemType = new NamespacedKey(plugin, "type");
+        meta.getPersistentDataContainer().set(itemType, new ItemDataType(), ItemType.ENCHANTMENT_SCROLL);
 
         meta.setDisplayName(plugin.format("&fEnchantment Scroll"));
         meta.setCustomModelData(1500000);
